@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+
+# Environment
+.env
+
+# Node
+node_modules/
+frontend/dist/
+frontend/build/
+
+# IDE
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Database
+*.db
+*.sqlite3
+
+# Models
+backend/nlp/trained_models/
+
+# Logs
+*.log
+logs/
+
+# Docker
+.docker/
