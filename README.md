@@ -66,7 +66,7 @@ DIGNITY Watch automatically collects, verifies, and publishes structured data on
 ## 👤 Author
 
 **Asawari Vasantrao Fuse**
-B.Tech CSE (Data Science), Year 3
+B.Tech CSE (Data Science), 3rd year
 
 ## 📄 License
 
