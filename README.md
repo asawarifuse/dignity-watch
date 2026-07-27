@@ -17,22 +17,21 @@ DIGNITY Watch automatically collects, verifies, and publishes structured data on
 
 ## 🏗 Architecture
 50+ News Sources + Govt Reports + Court Judgments + NGO Reports
-│
-▼
-Web Scraping (Scrapy + Selenium)
-│
-▼
-Language Detection → Translation → NER → Dedup → Confidence Scoring
-│
-▼
-PostgreSQL + PostGIS + Neo4j
-│
-▼
-FastAPI Backend + React Dashboard + PDF Reports
-│
-▼
-Public API + Interactive Map + Automated Alerts
-
+        │
+        ▼
+   Web Scraping (Scrapy + Selenium)
+        │
+        ▼
+   Language Detection → Translation → NER → Dedup → Confidence Scoring
+        │
+        ▼
+   PostgreSQL + PostGIS + Neo4j
+        │
+        ▼
+   FastAPI Backend + React Dashboard + PDF Reports
+        │
+        ▼
+   Public API + Interactive Map + Automated Alerts
 
 
 ## 🛠 Tech Stack
