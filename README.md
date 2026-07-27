@@ -16,6 +16,8 @@ Manual scavenging — cleaning sewers and septic tanks by hand — has been ille
 DIGNITY Watch automatically collects, verifies, and publishes structured data on manual scavenging incidents from 50+ multilingual news sources, government reports, and court judgments.
 
 ## 🏗 Architecture
+
+```
 50+ News Sources + Govt Reports + Court Judgments + NGO Reports
         │
         ▼
@@ -32,6 +34,7 @@ DIGNITY Watch automatically collects, verifies, and publishes structured data on
         │
         ▼
    Public API + Interactive Map + Automated Alerts
+```
 
 
 ## 🛠 Tech Stack
