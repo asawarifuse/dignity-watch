@@ -16,26 +16,54 @@ Manual scavenging — cleaning sewers and septic tanks by hand — has been ille
 DIGNITY Watch automatically collects, verifies, and publishes structured data on manual scavenging incidents from 50+ multilingual news sources, government reports, and court judgments.
 
 ## 🏗 Architecture
-50+ Sources → Scraping → NLP Pipeline → PostgreSQL + Neo4j → FastAPI → React Dashboard
+50+ News Sources + Govt Reports + Court Judgments + NGO Reports
+│
+▼
+Web Scraping (Scrapy + Selenium)
+│
+▼
+Language Detection → Translation → NER → Dedup → Confidence Scoring
+│
+▼
+PostgreSQL + PostGIS + Neo4j
+│
+▼
+FastAPI Backend + React Dashboard + PDF Reports
+│
+▼
+Public API + Interactive Map + Automated Alerts
+
 
 
 ## 🛠 Tech Stack
 
 | Layer | Technology |
 |-------|------------|
-| Scraping | Scrapy, Selenium |
-| NLP | HuggingFace, spaCy |
+| Scraping | Scrapy, Selenium, BeautifulSoup |
+| NLP | XLM-RoBERTa, IndicBERT, IndicTrans2, spaCy |
 | Backend | FastAPI, PostgreSQL + PostGIS, Neo4j, Redis |
-| Frontend | React, TailwindCSS, MapLibre GL |
+| Frontend | React, TailwindCSS, MapLibre GL, Recharts |
 | DevOps | Docker, GitHub Actions, Render |
+| Monitoring | Prometheus, Grafana |
 
-## 🚧 Status
+## 📊 Features
 
-🟡 **Phase 0: Foundation** — In Progress (16-week build)
+- 🤖 Automated multilingual scraping from 50+ sources in 8 Indian languages
+- 🧠 NLP pipeline: Language detection → Translation → NER → Dedup → Validation
+- 🗺️ Interactive GIS dashboard with heatmaps and temporal trends
+- ⚖️ Legal compliance tracking (PPE, FIR, compensation)
+- 🔍 Full-text search across all incidents
+- 📄 Auto-generated PDF reports
+- 🔌 Public REST API
+- 🛠 Admin panel for verification
+
+## 🚧 Project Status
+
+🟡 **Phase 0: Foundation** (In Progress — 16-week build)
 
 ## 👤 Author
 
-**Asawari Vasantrao Fuse**  
+**Asawari Vasantrao Fuse**
 B.Tech CSE (Data Science), Year 3
 
 ## 📄 License
